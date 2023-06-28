@@ -1,10 +1,12 @@
 "use strict";
 
+// prompt the user for their name and write it to the DOM
 function getUserName() {
   let username = prompt("What is your name?");
   return document.write(username);
 }
 
+// prompt the user for a number of days and write it to the DOM
 function getStartDate() {
   let startDate = prompt(
     "How many days until you start your learning journey?"
@@ -12,6 +14,9 @@ function getStartDate() {
   return document.write(startDate);
 }
 
+/* Prompt the user for a number of years and send a different message
+   depending on how many years of experience they have
+*/
 function getFinalMessage() {
   let message;
 
@@ -38,13 +43,20 @@ function getFinalMessage() {
   return document.write(message);
 }
 
+/* Confirm if the user wants to play a game.
+   If so, prompt the user to guess a number. 
+   Alert if too high or too low.
+   When the guess is correct, alert the user and stop the game.
+*/
 function guessJavaScriptDate() {
   let userWantsToPlay = confirm("Do you want to play a trivia game?");
   if (userWantsToPlay == true) {
     let guess;
     let correctAnswer = 26;
     while (guess != correctAnswer) {
-      guess = prompt("How old is the programming JavaScript?");
+      guess = prompt(
+        "How many years old is the programming language JavaScript?"
+      );
       if (guess < correctAnswer) {
         alert("Too low! Guess again");
       } else if (guess > correctAnswer) {
@@ -56,4 +68,3 @@ function guessJavaScriptDate() {
     }
   }
 }
-guessJavaScriptDate()
