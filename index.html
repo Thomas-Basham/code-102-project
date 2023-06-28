@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beginner developer tips</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="app.js"></script>
   </head>
   <body>
     <header>
-      <p>HELLO, USERNAME</p>
+      <p>
+        HELLO,
+        <script>
+          getUserName();
+        </script>
+      </p>
     </header>
     <main>
       <section id="intro-section">
@@ -21,6 +27,13 @@
           <p>
             A guide for navigating your entry to the world of software
             development
+          </p>
+          <p class="orange-text">
+            You start your journey in
+            <script>
+              getStartDate();
+            </script>
+            Days!
           </p>
         </div>
       </section>
@@ -99,12 +112,17 @@
           </li>
           <li>
             <strong>Drink water.</strong> Seriously! Your brain composed of 73%
-            water and is going to be working overtime, requiring more hydration
+            water and it's going to be working overtime, requiring more hydration
             than usual. More importantly, look after your overall health. Take
             time for walks daily. Stretch during breaks. Get quality time with
             humans you love. Get enough sleep.
           </li>
         </ul>
+        <h3 class="orange-text">
+          <script>
+            getFinalMessage();
+          </script>
+        </h3>
       </section>
     </main>
     <footer>&copy; Thomas Basham</footer>
