@@ -10,13 +10,6 @@ body {
   background-color: rgb(37, 36, 34);
 }
 
-main {
-  width: 50%;
-  margin: 0 auto;
-  background-color: rgb(64, 61, 57);
-  padding: 24px;
-}
-
 header {
   height: fit-content;
   text-align: end;
@@ -36,17 +29,22 @@ h2 {
   color: rgb(235, 94, 40);
 }
 
-.orange-text {
-  color: rgb(235, 94, 40);
+main {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgb(64, 61, 57);
+  padding: 24px;
 }
 
 li {
   color: rgb(255, 252, 242);
   margin: 0 0 12px 0;
+  font-size: 18px;
 }
 
 p {
-  color: rgb(204, 197, 185)
+  color: rgb(204, 197, 185);
+  font-size: 18px;
 }
 
 img {
@@ -54,17 +52,32 @@ img {
   max-width: 40%;
 }
 
-
 footer {
   text-align: center;
   padding: 24px 0;
   color: rgb(204, 197, 185);
 }
 
+.orange-text {
+  color: rgb(235, 94, 40);
+}
+
 #intro-section {
-  padding: 24px 0 0 0
+  padding: 24px 0 0 0;
+  height: fit-content;
 }
 
 #heading-text-container {
   float: right;
+  width: 50%;
+  margin: 0 0 0 12px;
+}
+
+#heading-text-container h1 {
+  margin: 0 0 48px 0;
+  overflow: auto;
+}
+
+#heading-text-container p {
+  margin: 0 0 15% 0;
 }
